@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/login_screen"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/etUSERNAME"
+        android:layout_width="298dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etPASSWORD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPASSWORD"
+        android:layout_width="298dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="111dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:password="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUSERNAME" />
+
+    <Button
+        android:id="@+id/btnLOGIN"
+        android:layout_width="203dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/cust_button"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/btnSIGNUP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPASSWORD" />
+
+    <TextView
+        android:id="@+id/btnSIGNUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="120dp"
+        android:text="Add a User?"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLOGIN" />
+</androidx.constraintlayout.widget.ConstraintLayout>
